@@ -43,7 +43,10 @@ body {
 .pizza__content {
 	flex: 1;
 	background: white;
-	padding: 35px 30px;
+	padding: 45px 30px;
+
+	display: flex;
+	flex-direction: column; /*mijenjamo smjer osi...*/
 }
 
 .pizza__price {
@@ -61,11 +64,12 @@ body {
 .pizza__title {
 	display: flex;
 	align-items: center;
+	margin-bottom: 20px;
 }
 
 .pizza__heading {
 	font-size: 20px;
-	margin-right: auto;
+	flex: 1;
 }
 
 .pizza__tag {
@@ -82,4 +86,29 @@ body {
 }
 .pizza__tag--2 {
 	background-color: #4ca2cd;
+}
+
+.pizza__description {
+	font-size: 18px;
+}
+
+.pizza__details {
+	display: flex;
+	/* justify-content: space-between; */
+	margin-top: auto;
+}
+
+.pizza__detail {
+	font-size: 16px;
+	text-transform: uppercase;
+	margin-right: 10px;
+	font-weight: 500;
+
+	display: flex;
+	align-items: center;
+}
+
+.emoji {
+	font-size: 16px;
+	margin-right: 3px;
 }
